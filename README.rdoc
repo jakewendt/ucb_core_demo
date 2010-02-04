@@ -13,6 +13,10 @@ This demo app will only work on localhost.  To work elsewhere, it will need to b
 	rake db:migrate
 	rake test
 
+	script/server
+	#	login to you app
+	rake app:deputize <Your CalNet UID>
+
 == Further Info
 
 Adapting a Web Application to Interoperate with CAS
