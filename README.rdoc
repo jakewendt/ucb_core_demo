@@ -1,7 +1,6 @@
 = UC Berkeley CalNet CAS and LDAP Demo
 
-This demo app will only work on localhost.
-
+This demo app will only work on localhost.  To work elsewhere, it will need to be registered.
 
 == Requires
 
@@ -11,11 +10,16 @@ This demo app will only work on localhost.
 == Installation
 
   rake gems:install
+	rake db:migrate
+	rake test
 
 == Further Info
 
 Adapting a Web Application to Interoperate with CAS
 https://calnet.berkeley.edu/developers/developerResources/cas/CASAppSetup.html
+
+CAS Registration
+https://calnet.berkeley.edu/developers/developerResources/cas/CASRegistration.html
 
 Ruby CAS Client Gem on GitHub
 http://github.com/gunark/rubycas-client/tree/master/examples/rails/
