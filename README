@@ -1,0 +1,11 @@
+= UC Berkeley CalNet CAS and LDAP Demo
+
+
+== Requires
+
+	rubycas-client
+	ucb_ldap
+
+== Installation
+
+  rake gems:install

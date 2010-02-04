@@ -21,30 +21,8 @@ Rails::Initializer.run do |config|
 	# config.gem "aws-s3", :lib => "aws/s3"
 
 
-#	For MS SQL Server ...
-#	from http://gist.github.com/170286
-	# This gem may be needed, but the database.yml cannot be modified to use it
-	#	until it is (or will need to be installed manually via ruby and gem.)
-	# If the database.yml refers the sqlserver db, it will prevent the gem from being able
-	# to be installed via rails' rake gems:install
-		#	these version may not be important
-#		config.gem 'dbi', :version => '0.4.1'
-#		config.gem 'dbd-odbc', :version => '0.2.4', :lib => 'dbd/ODBC'
-	#	dbd-odbc gem requires ...
-	#		mkdir tmp
-	#		cd tmp
-	#		curl -O http://www.ch-werner.de/rubyodbc/ruby-odbc-0.9997.tar.gz
-	#		tar -zxvf ruby-odbc-0.9997.tar.gz
-	#		cd ruby-odbc-0.9997
-	#		ruby extconf.rb
-	#		make
-	#		sudo make install
-#		config.gem 'activerecord-sqlserver-adapter', :lib => 'active_record/connection_adapters/sqlserver_adapter'
-#		config.gem 'activerecord-odbc-adapter', :lib => 'active_record/connection_adapters/odbc_adapter'
-
-#	For CAS / CalNet Authentication
+	#	For CAS / CalNet Authentication
 	config.gem "rubycas-client"
-
 
 	#	probably will come from http://gemcutter.org/gems/ucb_ldap
 	#	version 1.3.2 as of Jan 25, 2010

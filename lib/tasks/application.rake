@@ -25,27 +25,6 @@ namespace :app do
 		user.deputize
 		puts "User deputized: #{user.is_admin?}"
 		puts
-#puts $*.last
-#exit
 	end
 
 end
-
-
-#	$* is an array of arguments passed to rake
-#	all of them are tasks unless they include a = sign
-#	so can't do it like I was trying ...
-#		rake app:deputize 1
-#	must be ...
-#		rake app:deputize uid=1
-#
-#	if I put an explicit 'exit' at the end of the task, rake doesn't try to execute any more
-#
-#	puts $*.length
-#		if $*.length <= 1
-#			puts "User's CalNet UID required."
-#			puts "Usage: rake #{$*} INTEGER"
-#			exit
-#		end
-
-
