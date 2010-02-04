@@ -19,21 +19,21 @@ This demo app will only work on localhost.  To work elsewhere, it will need to b
 
 == Further Info
 
-Adapting a Web Application to Interoperate with CAS
-https://calnet.berkeley.edu/developers/developerResources/cas/CASAppSetup.html
+{Adapting a Web Application to Interoperate with CAS}
+[https://calnet.berkeley.edu/developers/developerResources/cas/CASAppSetup.html]
 
-CAS Registration
-https://calnet.berkeley.edu/developers/developerResources/cas/CASRegistration.html
+{CAS Registration}
+[https://calnet.berkeley.edu/developers/developerResources/cas/CASRegistration.html]
 
-Ruby CAS Client Gem on GitHub
-http://github.com/gunark/rubycas-client/tree/master/examples/rails/
+{Ruby CAS Client Gem on GitHub}
+[http://github.com/gunark/rubycas-client/tree/master/examples/rails/]
 
-Ruby CAS Client Documentation
-http://rubycas-client.rubyforge.org/
+{Ruby CAS Client Documentation}
+[http://rubycas-client.rubyforge.org/]
 
-UCB LDAP Gem on GemCutter
-http://gemcutter.org/gems/ucb_ldap
+{UCB LDAP Gem on GemCutter}
+[http://gemcutter.org/gems/ucb_ldap]
 
-UCB LDAP Documentation
-http://ucbrb.rubyforge.org/ucb_ldap/
+{UCB LDAP Documentation}
+[http://ucbrb.rubyforge.org/ucb_ldap/]
 
