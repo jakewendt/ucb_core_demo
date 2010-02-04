@@ -9,7 +9,7 @@ This demo app will only work on localhost.  To work elsewhere, it will need to b
 
 == Installation
 
-  rake gems:install
+	rake gems:install
 	rake db:migrate
 	rake test
 
