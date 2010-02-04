@@ -2,6 +2,8 @@
 
 This demo app will only work on localhost.  To work elsewhere, it will need to be registered.  It is meant to show the capabilities of the CAS authentication process and use of the LDAP resource.  LDAP is also a limited "anonymous BIND" providing only already public data about the users.  If other LDAP attributes are required, a "privileged BIND" application must be submitted and approved.
 
+A User model is created and maintained from user logins.  From this, administrators (deputies) are created and destroyed manually.
+
 == Requires
 
 	rubycas-client
