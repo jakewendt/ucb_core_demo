@@ -14,7 +14,7 @@ This demo app will only work on localhost.  To work elsewhere, it will need to b
 	rake test
 
 	script/server
-	#	login to you app
+	#	login to your app
 	rake app:deputize <Your CalNet UID>
 
 == Further Info
