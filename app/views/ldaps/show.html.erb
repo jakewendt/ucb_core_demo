@@ -1,0 +1,14 @@
+<fieldset id='main'>
+<legend>My Account</legend>
+<p><%= current_user.displayname %>'s Account page</p>
+ 
+<div class='person'><dl>
+	<% @person.attributes.keys.each do |key| -%>
+		<dt><%= key -%></dt>
+		<% @person.attributes[key].each do |value| -%>
+			<dd><%= value -%></dd>
+		<% end -%>
+	<% end if @person -%>
+</dl></div>
+ 
+</fieldset> 
