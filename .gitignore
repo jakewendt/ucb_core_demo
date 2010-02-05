@@ -4,3 +4,5 @@ db/*.sqlite3
 db/seeds.rb
 db/schema.rb
 log/*.log
+coverage
+coverage.data

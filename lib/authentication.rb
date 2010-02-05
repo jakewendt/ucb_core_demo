@@ -46,9 +46,10 @@ protected
 	#	A user like myself can open many tabs or windows.  It'd be nice if I
 	#	could create sub sessions for each tab and window.  Just haven't done
 	#	it yet.
-	def store_referer
-		session[:refer_to] = request.env["HTTP_REFERER"]
-	end
+#	Not used yet, so not tested yet, so commented out.
+#	def store_referer
+#		session[:refer_to] = request.env["HTTP_REFERER"]
+#	end
 
 #	Not used yet, so not tested yet, so commented out.
 #	def redirect_back_or_default(default)

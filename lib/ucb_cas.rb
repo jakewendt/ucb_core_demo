@@ -8,8 +8,7 @@ require 'casclient/frameworks/rails/filter'
 module UCB::CAS
 
 	def self.included(base)
-		base_server_url = ( RAILS_ENV == "production" ) ? 
-			"https://auth.berkeley.edu" : "https://auth-test.berkeley.edu"
+		base_server_url = ( RAILS_ENV == "production" ) ?  "https://auth.berkeley.edu" : "https://auth-test.berkeley.edu"
 
 		CASClient::Frameworks::Rails::Filter.configure(
 			:username_session_key => :calnetuid,

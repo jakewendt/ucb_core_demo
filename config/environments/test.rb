@@ -28,6 +28,7 @@ config.action_mailer.delivery_method = :test
 # config.active_record.schema_format = :sql
 
 
+config.gem "rcov"
 
 #	Without the :lib => false, the 'rake test' actually fails?
 config.gem "mocha", :lib => false
