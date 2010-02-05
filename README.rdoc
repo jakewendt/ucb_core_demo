@@ -4,6 +4,8 @@ This demo app will only work on localhost.  To work elsewhere, it will need to b
 
 A User model is created and maintained from user logins.  From this, administrators (deputies) are created and destroyed manually.
 
+This demo uses Rails 2.3.4.
+
 == Requires
 
 	rubycas-client
