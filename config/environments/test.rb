@@ -27,3 +27,15 @@ config.action_mailer.delivery_method = :test
 # like if you have constraints or database-specific column types
 # config.active_record.schema_format = :sql
 
+
+#	mocha is used in the tests and therefore required
+#	however if it is listed here, the tests fail.
+#	so make sure it is installed and commented out here.
+#		wtf?
+#	config.gem "mocha"
+
+#	Also, factory girl is used in the test env
+
+config.gem "thoughtbot-factory_girl",
+	:lib    => "factory_girl",
+	:source => "http://gems.github.com"

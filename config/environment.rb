@@ -29,7 +29,19 @@ Rails::Initializer.run do |config|
 	config.gem "ucb_ldap", :source => "http://gemcutter.org"
 
 
-	config.gem "mocha"
+#	mocha is used in the tests and therefore required
+#	however if it is listed here, the tests fail.
+#	so make sure it is installed and commented out here.
+#		wtf?
+#	config.gem "mocha"
+
+#	Also, factory girl is used in the test but not
+#	really needed here for the dev or pro environments.
+#	config.gem "thoughtbot-factory_girl",
+#		:lib    => "factory_girl",
+#		:source => "http://gems.github.com"
+
+#	And autotest is not working
 
 #	Successfully installed json_pure-1.2.0
 #	Successfully installed rubyforge-2.0.3
@@ -43,13 +55,9 @@ Rails::Initializer.run do |config|
 	#	odd errors that didn't exist on my other computer.
 #	config.gem "ZenTest", :version => '3.10.0'	
 #	config.gem "ZenTest", :version => '3.11.0'
-	config.gem "ZenTest", :version => '4.1.1'
+#	config.gem "ZenTest", :version => '4.1.1'
 	#	Versions newer than 4.1.1 remove autotest
 
-
-	config.gem "thoughtbot-factory_girl",
-		:lib    => "factory_girl",
-		:source => "http://gems.github.com"
 
 
 	# Only load the plugins named here, in the order given (default is alphabetical).
