@@ -26,7 +26,30 @@ Rails::Initializer.run do |config|
 
 	#	probably will come from http://gemcutter.org/gems/ucb_ldap
 	#	version 1.3.2 as of Jan 25, 2010
-	config.gem "ucb_ldap", :source => "http://gemcutter.org/gems/"
+	config.gem "ucb_ldap", :source => "http://gemcutter.org"
+
+
+	config.gem "mocha"
+
+#	Successfully installed json_pure-1.2.0
+#	Successfully installed rubyforge-2.0.3
+#	Successfully installed rake-0.8.7
+#	Successfully installed gemcutter-0.3.0
+#	Successfully installed hoe-2.5.0
+#	Successfully installed ZenTest-3.10.0
+	#	for some reason, on my new Mac Pro, newer versions of 
+	#	ZenTest's autotest don't actually find the rails test files.
+	#	Also, autotest's testing works, but rake test finds some 
+	#	odd errors that didn't exist on my other computer.
+	config.gem "ZenTest", :version => '3.10.0'	
+#	config.gem "ZenTest", :version => '3.11.0'
+#	config.gem "ZenTest", :version => '4.1.1'
+	#	Versions newer than 4.1.1 remove autotest
+
+
+	config.gem "thoughtbot-factory_girl",
+		:lib    => "factory_girl",
+		:source => "http://gems.github.com"
 
 
 	# Only load the plugins named here, in the order given (default is alphabetical).
