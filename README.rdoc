@@ -23,10 +23,6 @@ This demo uses Rails 2.3.4.
 == Testing
 
 	rake RAILS_ENV=test gems:install
-	#	this gem is also needed, but causes 'rake test' failure if 
-	#	in environment files as 'config.gem "mocha"'???
-	#	I'd like to figure this out as it is the last anomaly.
-	gem install mocha
 	rake test
 		and/or
 	autotest
