@@ -47,6 +47,7 @@ class ActiveSupport::TestCase
 
 
 	def login_as( uid='1' )
+#		User.find_or_create_by_uid(uid)
 		@request.session[:calnetuid] = uid
 		#	only one of these is necessary, but do both so works regardless
 		CASClient::Frameworks::Rails::Filter.stubs(:filter).returns(true)

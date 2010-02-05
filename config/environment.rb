@@ -41,9 +41,9 @@ Rails::Initializer.run do |config|
 	#	ZenTest's autotest don't actually find the rails test files.
 	#	Also, autotest's testing works, but rake test finds some 
 	#	odd errors that didn't exist on my other computer.
-	config.gem "ZenTest", :version => '3.10.0'	
+#	config.gem "ZenTest", :version => '3.10.0'	
 #	config.gem "ZenTest", :version => '3.11.0'
-#	config.gem "ZenTest", :version => '4.1.1'
+	config.gem "ZenTest", :version => '4.1.1'
 	#	Versions newer than 4.1.1 remove autotest
 
 
