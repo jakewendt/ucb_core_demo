@@ -29,13 +29,11 @@ config.action_mailer.delivery_method = :test
 
 
 
-#	mocha is used in the tests and therefore required
-#	however if it is listed here, the tests fail. (rake test but NOT autotest?)
-#	so make sure it is installed and commented out here.
-#		wtf?
-#	config.gem "mocha"
+#	Without the :lib => false, the 'rake test' actually fails?
+config.gem "mocha", :lib => false
 
 config.gem "autotest-rails", :lib => 'autotest/rails'
+
 config.gem "ZenTest", :version => '4.1.1'
 
 config.gem "thoughtbot-factory_girl",
