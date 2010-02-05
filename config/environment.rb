@@ -29,37 +29,6 @@ Rails::Initializer.run do |config|
 	config.gem "ucb_ldap", :source => "http://gemcutter.org"
 
 
-#	mocha is used in the tests and therefore required
-#	however if it is listed here, the tests fail.
-#	so make sure it is installed and commented out here.
-#		wtf?
-#	config.gem "mocha"
-
-#	Also, factory girl is used in the test but not
-#	really needed here for the dev or pro environments.
-#	config.gem "thoughtbot-factory_girl",
-#		:lib    => "factory_girl",
-#		:source => "http://gems.github.com"
-
-#	And autotest is not working
-
-#	Successfully installed json_pure-1.2.0
-#	Successfully installed rubyforge-2.0.3
-#	Successfully installed rake-0.8.7
-#	Successfully installed gemcutter-0.3.0
-#	Successfully installed hoe-2.5.0
-#	Successfully installed ZenTest-3.10.0
-	#	for some reason, on my new Mac Pro, newer versions of 
-	#	ZenTest's autotest don't actually find the rails test files.
-	#	Also, autotest's testing works, but rake test finds some 
-	#	odd errors that didn't exist on my other computer.
-#	config.gem "ZenTest", :version => '3.10.0'	
-#	config.gem "ZenTest", :version => '3.11.0'
-#	config.gem "ZenTest", :version => '4.1.1'
-	#	Versions newer than 4.1.1 remove autotest
-
-
-
 	# Only load the plugins named here, in the order given (default is alphabetical).
 	# :all can be used as a placeholder for all plugins not explicitly named
 	# config.plugins = [ :exception_notification, :ssl_requirement, :all ]

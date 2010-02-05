@@ -28,13 +28,15 @@ config.action_mailer.delivery_method = :test
 # config.active_record.schema_format = :sql
 
 
+
 #	mocha is used in the tests and therefore required
-#	however if it is listed here, the tests fail.
+#	however if it is listed here, the tests fail. (rake test but NOT autotest?)
 #	so make sure it is installed and commented out here.
 #		wtf?
 #	config.gem "mocha"
 
-#	Also, factory girl is used in the test env
+config.gem "autotest-rails", :lib => 'autotest/rails'
+config.gem "ZenTest", :version => '4.1.1'
 
 config.gem "thoughtbot-factory_girl",
 	:lib    => "factory_girl",
