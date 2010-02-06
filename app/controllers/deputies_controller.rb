@@ -5,18 +5,16 @@ class DeputiesController < ApplicationController
 	before_filter :not_self_required, :except => :index
 
 	def index
-		@users = User.all(:conditions => { :administrator => true })
+		@users = User.all(:conditions => { :administrator => true }, :order => :sn)
 		render :template => 'users/index'
 	end
 
 	def create
-#		@user.update_attribute(:administrator, true)
 		@user.deputize
 		redirect_to_referer_or_default( users_path )
 	end
 
 	def destroy
-#		@user.update_attribute(:administrator, false)
 		@user.undeputize
 		redirect_to_referer_or_default( users_path )
 	end
