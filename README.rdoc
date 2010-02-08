@@ -18,7 +18,9 @@ This demo uses Rails 2.3.4.
 
 	script/server
 	#	login to your app
-	rake app:deputize <Your CalNet UID>
+	#	The first administrator/deputy must be created via the command line.
+	#	Others can be created via the command line or web app.
+	rake app:deputize uid=<Your CalNet UID>
 
 == Testing
 
